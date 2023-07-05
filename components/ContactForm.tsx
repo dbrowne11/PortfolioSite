@@ -9,7 +9,7 @@ export interface ContactFormProps {
     close_fn: (value: React.SetStateAction<boolean>) => void
 }
 
-const ContactForm = (props: ContactFormProps) => {
+const ContactForm = () => {
 
     return (
       <Paper  sx={{
@@ -29,16 +29,13 @@ const ContactForm = (props: ContactFormProps) => {
                 <TextField label="Subject" name="Subject" color="secondary" fullWidth={true}/>    
             </Grid>
             <Grid item xs={12} marginBottom={1}>
-                <TextField label="Message" color="secondary" multiline={true} rows={4} maxRows={Infinity} fullWidth={true}/>
+                <TextField label="Message" color="secondary" multiline={true} rows={4} fullWidth={true}/>
             </Grid>
 
             <Grid item xs={12} textAlign={'center'}>
                 <Button variant="contained" sx={{color:"secondary.main"}}>
                     Send Message 
                 </Button>
-                <Button variant="contained" onClick={() => props.close_fn} sx={{color:"secondary.main"}}>
-                    Close without sending
-                </Button> 
                 <p>
                 Send not currently implemented, please use email instead.
                 </p>

@@ -22,7 +22,8 @@ import ContactForm from "./ContactForm";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen =() => setIsOpen(true);
-  const handleClose = () => setIsOpen(false);
+  const handleClose = () => {setIsOpen(false); console.log("closed");}
+
   return (
     <Box bgcolor={theme.palette.background.paper}>
       <Grid container spacing={2} padding={2}>
@@ -62,7 +63,7 @@ const Header = () => {
               </Link>
             </FocusArea>
             <Modal open={isOpen} onClose={handleClose} >
-              <ContactForm close_fn={() => setIsOpen(false)}/>
+              <ContactForm/>
             </Modal>
           </Grid>
       </Grid>
