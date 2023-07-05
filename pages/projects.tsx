@@ -5,6 +5,8 @@ import ProjectPaper from "../components/ProjectPaper";
 import theme from "../theme/theme";
 import MediaCard from "../components/MediaCard";
 
+import cartpolegif from "../public/ProjectImgs/CartPoleSNN.gif"
+
 export default function Projects() {
     return (
         <Grid container padding={2} spacing={2}>
@@ -80,8 +82,8 @@ export default function Projects() {
             {/* CartPole SNN Card And Popup */}
             <Grid item md={6} textAlign={'center'}>
                 <ProjectCard title={"CartPole Spiking Neural Network"}
-                             media={"/ProjectImgs/CartPoleSNN.gif"}
-                             summary={"A small spiking neural network traned using a simple evolutionary strategy and solving the admittadly simple CartPole Environment"}
+                             media={"/CartPoleSNN.gif"}
+                             summary={"A small spiking neural network trained using a simple evolutionary strategy and solving the admittadly simple CartPole Environment"}
                              open={false}>
                     <ProjectPaper>
                         <Grid container padding={4} textAlign={'center'}>
