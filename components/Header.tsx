@@ -62,8 +62,7 @@ const Header = () => {
               </Link>
             </FocusArea>
             <Modal open={isOpen} onClose={handleClose} >
-              <ContactForm close_fn={() => setIsOpen(false)}>
-              </ContactForm>
+              <ContactForm close_fn={() => setIsOpen(false)}/>
             </Modal>
           </Grid>
       </Grid>

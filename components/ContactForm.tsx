@@ -6,14 +6,11 @@ import Link from "next/link";
 import { AlignHorizontalLeft } from "@mui/icons-material";
 
 export interface ContactFormProps {
-    children: React.ReactNode
     close_fn: (value: React.SetStateAction<boolean>) => void
 }
 
 const ContactForm = (props: ContactFormProps) => {
-    const onSend = (e) => {
-        e.preventDefault();
-    }
+
     return (
       <Paper  sx={{
         padding:2,
@@ -22,7 +19,7 @@ const ContactForm = (props: ContactFormProps) => {
         <Grid container padding={2}>
             <Grid item xs={12}>
                 <Typography variant="h6" color='secondary.main' textAlign={'center'}>
-                    Contact me through email at <Typography inline={true} color={'primary.contrastText'}>danielsbrowne11@gmail.com</Typography>
+                    Contact me through email at danielsbrowne11@gmail.com
                 </Typography>
             </Grid>
             <Grid item xs={12} marginBottom={1}>
@@ -39,7 +36,7 @@ const ContactForm = (props: ContactFormProps) => {
                 <Button variant="contained" sx={{color:"secondary.main"}}>
                     Send Message 
                 </Button>
-                <Button variant="contained" onClick={props.close_fn} sx={{color:"secondary.main"}}>
+                <Button variant="contained" onClick={() => props.close_fn} sx={{color:"secondary.main"}}>
                     Close without sending
                 </Button> 
                 <p>
