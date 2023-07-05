@@ -12,7 +12,9 @@ export interface ProjectCardProps {
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const handleOpen =() => setIsOpen(true);
+    const handleClose = () => {setIsOpen(false);}
     return (
         
       <Card  sx={{
@@ -20,7 +22,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         bgcolor: theme.palette.background.paper,
         height: '100%'
       }}>
-        <CardActionArea onClick={() => setIsOpen(true)}>
+        <CardActionArea onClick={handleOpen}>
           <Typography variant="h5" color={theme.palette.primary.main}>
             {props.title}
           </Typography>
@@ -29,10 +31,10 @@ const ProjectCard = (props: ProjectCardProps) => {
             {props.summary}
           </Typography>
         </CardActionArea>
-        <Modal open={isOpen} sx={{margin:10}}>
+        <Modal open={isOpen} onClose={handleClose} sx={{margin:10}}>
           <Box>
             {props.children}
-            <Button onClick={() => setIsOpen(false)}>Close</Button>
+            {/* <Button onClick={handleClose}>Close</Button> */}
           </Box>
       </Modal>
     </Card>

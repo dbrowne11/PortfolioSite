@@ -24,7 +24,7 @@ const MediaCard = (props: MediaCardProps) => {
                     {props.title}
                 </Typography>
                 <Box alignContent={'center'}>
-                    <Image src={props.media} width={250} height={250} alt={"training gif"}></Image>
+                    <Image src={props.media} width={250} height={250} alt={"Known issue of images not loading on some browsers, tested on Chrome"}></Image>
 
                 </Box>
                 <Typography variant="body2" color={theme.palette.primary.main} align="center">

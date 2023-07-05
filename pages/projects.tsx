@@ -27,8 +27,8 @@ export default function Projects() {
                                 <Typography variant="body1" color={theme.palette.primary.main}>
                                     The Moonwalk Simulation is a Lunar Exploration challenge designed modulate cognitive load and allow for the collection of a cognitive load bioindicator database.  While the subject 
                                     traversed between beacons, they were simultaneously tasked with monitoring oxygen and fuel levels, managing CO2 levels and motor temperature, tracking a satelite position, and responding
-                                    to communication prompts.  Each of these tasks had difficulty levels, and to validate the simulation difficulty yielded measureable results in I built and fit a random forest classifier to the collected
-                                    dataset.  Additionally, subjectively validated the cognitive load modulations through NASA's Task Load Index survey. 
+                                    to communication prompts.  Each of these tasks had difficulty levels, and to validate the simulation difficulty yielded measureable results, I built and fit a random forest classifier to the collected
+                                    dataset.  In addition, we subjectively validated the cognitive load modulations through NASA's Task Load Index survey. 
                                 </Typography>
                             </Grid>
                             <Grid item xs={4}>
@@ -83,22 +83,22 @@ export default function Projects() {
             <Grid item md={6} textAlign={'center'}>
                 <ProjectCard title={"CartPole Spiking Neural Network"}
                              media={"/CartPoleSNN.gif"}
-                             summary={"A small spiking neural network trained using a simple evolutionary strategy and solving the admittadly simple CartPole Environment"}
+                             summary={"A small spiking neural network trained using a simple evolutionary strategy and solving the admittedly simple CartPole Environment"}
                              open={false}>
                     <ProjectPaper>
-                        <Grid container padding={4} textAlign={'center'}>
+                        <Grid container padding={4}>
                             <Grid item md={12}>
                                 <Typography variant="h1" color={theme.palette.primary.contrastText} paddingBottom={4}>
                                     Small Spiking Neural Networks solve Cartpole
                                 </Typography>
                             </Grid>
                             <Grid item md={12}>
-                                <Typography variant="body1" color={theme.palette.primary.main} paddingBottom={4}>
+                                <Typography variant="body1" color={theme.palette.primary.main} paddingBottom={4} textAlign={'left'}>
                                     Cartpole is an easy environment to solve, so easy in fact, that numerous people have developed solutions that can solve it in the first training generation, (or without training)
                                     either by manually developing a policy, strong initial priors, or even just a lucky initialization in evolutionary search.  As this was my first foray into reinforcement learning 
                                     with spiking neural networks I wanted to keep it simple and with a policy evolved by a custom evolutionary algorithm my agent completely solves the environment.
                                 </Typography>
-                                <Typography variant="body1" color={theme.palette.primary.main}>
+                                <Typography variant="body1" color={theme.palette.primary.main} textAlign={'left'}>
                                     The cartpole environment observation is a 4 element vector consisting of position, velocity, pole angle, and angular velocity.  I used a simple MLP with a single hidden layer
                                     and leaky integrate and fire neurons. In order to train this network, I developed an extremely simple evolutionary algorithm (EA). Evolutionary Algorithms are defined by a few key operations: selection, mutation, crossover.  These operations are inspired by their biological 
                                     equivilants and the key distinctions between EAs are often in their mutation and crossover procedures.  For instance the EA Neuroevolution of Augmenting Topologies (NEAT) mutates the

@@ -22,7 +22,7 @@ import ContactForm from "./ContactForm";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen =() => setIsOpen(true);
-  const handleClose = () => {setIsOpen(false); console.log("closed");}
+  const handleClose = () => {setIsOpen(false);}
 
   return (
     <Box bgcolor={theme.palette.background.paper}>
