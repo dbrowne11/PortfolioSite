@@ -17,13 +17,14 @@ const ProjectCard = (props: ProjectCardProps) => {
         
       <Card  sx={{
         padding:2,
-        bgcolor: theme.palette.background.paper
+        bgcolor: theme.palette.background.paper,
+        height: '100%'
       }}>
         <CardActionArea onClick={() => setIsOpen(true)}>
           <Typography variant="h5" color={theme.palette.primary.main}>
             {props.title}
           </Typography>
-          <Image src={props.media} width={250} height={250} alt={"training gif"}></Image>
+          <Image src={props.media} width={250} height={250} alt={"Image Unavailable"}></Image>
           <Typography variant="body2" color={theme.palette.primary.main}>
             {props.summary}
           </Typography>
@@ -33,19 +34,6 @@ const ProjectCard = (props: ProjectCardProps) => {
             {props.children}
             <Button onClick={() => setIsOpen(false)}>Close</Button>
           </Box>
-          {/* <Paper sx={{padding:6}}>
-            <Grid container>  
-              <Grid item xs={12}>
-                <Typography variant="h3" color={theme.palette.primary.contrastText} align={"center"}>
-                  {props.title}
-                </Typography>
-                </Grid>
-                <Grid item justifyItems={'center'}>
-                  <Button onClick={() => setIsOpen(false)}>Close</Button>
-
-                </Grid>
-            </Grid>
-          </Paper> */}
       </Modal>
     </Card>
     

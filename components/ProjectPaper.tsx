@@ -11,7 +11,8 @@ export interface ProjectPaperProps {
 const ProjectPaper = (props: ProjectPaperProps) => {
     return (
         
-            <Paper color={theme.palette.background.paper}
+            <Paper sx={{height: '100%'}} 
+            color={theme.palette.background.paper}
                 >
                     {props.children}
             </Paper>

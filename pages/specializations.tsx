@@ -7,7 +7,7 @@ import vae_training from "../public/ProjectImgs/VAE_MNIST_train.gif"
 
 export default function Specializations() {
   return (
-    <Grid container margin={4} padding={4}>
+    <Grid container margin={4} padding={4} alignContent={'center'}>
       <Grid item xs={12} textAlign={'center'}>
         <BasePaper>
           <Grid container spacing={2}>
@@ -36,7 +36,7 @@ export default function Specializations() {
                 I love machine learning and have continued to explore it through both dissecting and implementing academic and implementing my own ideas and models. For instance, I developed the Cartpole Spiking 
                 Neural Network from relative scratch (that isn't to say that no one has done anything similar, just that I developed both the evolvable model and the evolutionary strategy).  Additionally, I have 
                 been working on implementing the model described in <Link href={"https://worldmodels.github.io/"}>'World Models'</Link>. On the right is the reconstructed image from the visual component of my 
-                trained world model
+                trained world model. Finally I participate in kaggle competitions to gain practical experience.
               </Typography>
             </Grid>
             <Grid item xs={4}>
