@@ -48,16 +48,17 @@ export default function Home() {
         </Grid>
         <Grid item xs={12} paddingBottom={4}>
           <Typography variant="body1" sx={{color:theme.palette.primary.main}}>
-            I recently graduated with highest honors and a B.S in Computer Science from the Universify of California, Santa Cruz and am looking to land my first software engineering position.  Through my time at university
-             I was trying to race my way into academia and as such took numerous capstone and graduate level classes including, Software Engineering, Applied Machine Learning, Artificial Intelligence, 
-             Distributed Systems, Compiler Design, and Analysis of Algorithms.  In addition to my theoretical foundation, my two years as a researcher at UCSC's Human Aware Robotics Exploration Lab substantially built 
-             my practical experience as I was the primary programmer for the human factors experiment we ran.
+            I recently graduated with highest honors and a B.S in Computer Science from the University of California, Santa Cruz (UCSC). Now I am looking to land my first software engineering position.  
+             Through my time at UCSC I took numerous capstone and graduate level classes including, Software Engineering, Applied Machine Learning, Artificial Intelligence, 
+             Distributed Systems, Compiler Design, and Analysis of Algorithms.  In addition to solid my theoretical foundation, my two years as a researcher at UCSC's Human Aware Robotics Exploration Lab 
+             substantially built my practical experience as I was the primary programmer for the human factors experiment we ran.
           </Typography>
 
         </Grid>
         <Grid item xs={12} paddingBottom={4}>
           <Typography variant="body1" sx={{color:theme.palette.primary.main}}>
-            I'd love to help you to solve technical challenges, utilize data for business improvements, or develop your skills in programming and machine learning so please feel free to contact me with any questions.
+            I'd love discuss how I can help you  solve technical challenges, utilize data for business improvements, or develop your skills in programming and machine learning.
+             Please feel free to contact me if you have an questions or need additional information.
           
           </Typography>
         </Grid>

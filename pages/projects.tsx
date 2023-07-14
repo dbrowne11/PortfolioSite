@@ -25,10 +25,11 @@ export default function Projects() {
                             </Grid>
                             <Grid item md={7} marginRight={2}>
                                 <Typography variant="body1" color={theme.palette.primary.main}>
-                                    The Moonwalk Simulation is a Lunar Exploration challenge designed modulate cognitive load and allow for the collection of a cognitive load bioindicator database.  While the subject 
-                                    traversed between beacons, they were simultaneously tasked with monitoring oxygen and fuel levels, managing CO2 levels and motor temperature, tracking a satelite position, and responding
-                                    to communication prompts.  Each of these tasks had difficulty levels, and to validate the simulation difficulty yielded measureable results, I built and fit a random forest classifier to the collected
-                                    dataset.  In addition, we subjectively validated the cognitive load modulations through NASA's Task Load Index survey. 
+                                    The Moonwalk Simulation is a lunar exploration challenge designed to modulate cognitive load and allow for the collection of a cognitive load bioindicator database. 
+                                     While the subject drove a lunar rover between beacons, they were simultaneously tasked with monitoring oxygen and battery levels, managing CO2 levels and motor temperature, 
+                                     tracking a satelite position, and responding to communication prompts.  Each of these tasks had 'difficulty modes', with the harder versions balanced to elicit a greater
+                                     mental workload response. To validate the difficulty modes yielded measureable results, I built and fit a random forest classifier to the collected dataset.  
+                                     In addition, we subjectively validated the cognitive load modulations through NASA's Task Load Index survey. 
                                 </Typography>
                             </Grid>
                             <Grid item xs={4}>
@@ -94,15 +95,15 @@ export default function Projects() {
                             </Grid>
                             <Grid item md={12}>
                                 <Typography variant="body1" color={theme.palette.primary.main} paddingBottom={4} textAlign={'left'}>
-                                    Cartpole is an easy environment to solve, so easy in fact, that numerous people have developed solutions that can solve it in the first training generation, (or without training)
-                                    either by manually developing a policy, strong initial priors, or even just a lucky initialization in evolutionary search.  As this was my first foray into reinforcement learning 
-                                    with spiking neural networks I wanted to keep it simple and with a policy evolved by a custom evolutionary algorithm my agent completely solves the environment.
+                                    Cartpole is an easy environment to solve. So easy in fact, that numerous people have developed solutions that can solve it in the first training generation, (or without training)
+                                    either by manually developing a policy, strong initial priors, or even just a lucky initialization in evolutionary search.  Since this was my first foray into reinforcement learning 
+                                    with spiking neural networks I wanted to keep it simple. With a policy evolved by a custom evolutionary algorithm, my agent completely solves the environment.
                                 </Typography>
                                 <Typography variant="body1" color={theme.palette.primary.main} textAlign={'left'}>
                                     The cartpole environment observation is a 4 element vector consisting of position, velocity, pole angle, and angular velocity.  I used a simple MLP with a single hidden layer
                                     and leaky integrate and fire neurons. In order to train this network, I developed an extremely simple evolutionary algorithm (EA). Evolutionary Algorithms are defined by a few key operations: selection, mutation, crossover.  These operations are inspired by their biological 
-                                    equivilants and the key distinctions between EAs are often in their mutation and crossover procedures.  For instance the EA Neuroevolution of Augmenting Topologies (NEAT) mutates the
-                                    network architecture in addition to the weights and biases.  Covariance matrix adaptation (CMA) implements the evolutionary search as a multivariate statistical optimiztion and learns a 
+                                    equivalents and the key distinctions between EAs are often in their mutation and crossover procedures.  For instance the EA Neuroevolution of Augmenting Topologies (NEAT) mutates the
+                                    network architecture in addition to the weights and biases.  Covariance matrix adaptation (CMA) implements the evolutionary search as a multivariate statistical optimization and learns a 
                                     distribution of parameters, while leaving the architecture unchanged. Finally a particularly interesting ES I plan to implement in the near future are Weight Agnostic Neural Networks (WANN)
                                     which have achieved impressive results by generating an architecture that works regardless of the network weight (Yes, weight: singular.  The proposing authors managed to solve the gymnasium
                                     cartpole environment with a network in which every weight and bias had the same (random) value.) I write all this to put into perspective just how simple my mutation strategy was. 
