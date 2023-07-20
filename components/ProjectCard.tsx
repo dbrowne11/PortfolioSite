@@ -1,4 +1,4 @@
-import { Card, CardActionArea, Modal, Typography, Paper, Button, Grid, Box} from "@mui/material";
+import { Card, CardActionArea, CardMedia, Modal, Typography, Paper, Button, Grid, Box} from "@mui/material";
 import Image from "next/image";
 import theme from "../theme/theme";
 import React, { useState } from "react";
@@ -23,11 +23,13 @@ const ProjectCard = (props: ProjectCardProps) => {
         height: '100%'
       }}>
         <CardActionArea onClick={handleOpen}>
-          <Typography variant="h5" color={theme.palette.primary.main}>
+          <Typography variant="h5" color={theme.palette.primary.main} textAlign={'center'}>
             {props.title}
           </Typography>
-          <Image src={props.media} width={250} height={250} alt={"Image Unavailable"}></Image>
-          <Typography variant="body2" color={theme.palette.primary.main}>
+          <CardMedia component='img' image={props.media}>
+            
+          </CardMedia>
+          <Typography variant="body2" color={theme.palette.primary.main} marginTop={2}>
             {props.summary}
           </Typography>
         </CardActionArea>

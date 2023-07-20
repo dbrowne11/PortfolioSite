@@ -7,7 +7,7 @@ import vae_training from "../public/ProjectImgs/VAE_MNIST_train.gif"
 
 export default function Specializations() {
   return (
-    <Grid container margin={4} padding={4} alignContent={'center'}>
+    <Grid container margin={4} padding={4} >
       <Grid item xs={12} textAlign={'center'}>
         <BasePaper>
           <Grid container spacing={2}>

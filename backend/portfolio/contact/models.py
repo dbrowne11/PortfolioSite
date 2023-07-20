@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class ContactInfo(models.Model):
+class Message(models.Model):
     name = models.CharField(max_length=128)
     date = models.DateTimeField("Time sent")
     subject = models.CharField(max_length=128)

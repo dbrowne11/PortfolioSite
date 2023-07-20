@@ -11,15 +11,15 @@ export default function Projects() {
     return (
         <Grid container padding={2} spacing={2}>
             {/* Moonwalk Card And Popup */}
-            <Grid item md={6} textAlign={'center'}>
+            <Grid item sm={12} md={6}>
                 <ProjectCard title={"Moonwalk Simulation"}
                              media={"/ProjectImgs/Moonwalk.PNG"}
                              summary={"A simulation environment built during my time at the Human Aware Robotic Exploration lab intended to modulate mental workload"}
                              open={false}>
                     <ProjectPaper>
-                        <Grid container padding={4} textAlign={'center'}>
-                            <Grid item md={12}>
-                                <Typography variant="h1" color="primary.contrastText" paddingBottom={4}>
+                        <Grid container padding={4}>
+                            <Grid item sm={12} textAlign={'center'}>
+                                <Typography variant="h1" color="primary.contrastText" paddingBottom={4} >
                                     Moonwalk Simulation
                                 </Typography>
                             </Grid>
@@ -31,6 +31,11 @@ export default function Projects() {
                                      mental workload response. To validate the difficulty modes yielded measureable results, I built and fit a random forest classifier to the collected dataset.  
                                      In addition, we subjectively validated the cognitive load modulations through NASA's Task Load Index survey. 
                                 </Typography>
+                                <Typography variant="body1" color={theme.palette.primary.main}>
+                                    Through the four months of development, I encountered a number of challenges. I was given nearly free reign of a Unity project in which I needed to implement a variety of 
+                                    simulation and experimental features.  In addition to the variable difficulty tasks, I utilized a (buggy) 3rd party API to integrate a 6-degree of freedom (DOF) 
+                                    motion platform, a 
+                                </Typography>
                             </Grid>
                             <Grid item xs={4}>
                                 <MediaCard title={"Moonwalk Tutorial (no VR)"} media={"/ProjectImgs/Moonwalk.gif"} caption={"The tutorial explaining game mechanics we gave to subjects prior to their trial."}></MediaCard>
@@ -40,19 +45,19 @@ export default function Projects() {
                 </ProjectCard>
             </Grid>
             {/* OceanAI Card And Popup */}
-            <Grid item md={6} textAlign={'center'}>
+            <Grid item sm={12} md={6}>
                 <ProjectCard title={"Website for UCSC AI for Oceans Program"}
                              media={'/ProjectImgs/AIforOceans.PNG'}
                              summary={"A simple website using a NextJS and MongoDB to display information about the program, as well as allow for dataset downloads from a centralized location"}
                              open={false}>
                                 <ProjectPaper>
-                                    <Grid container spacing={2} padding={2} textAlign={'center'}>
+                                    <Grid container spacing={2} padding={2}>
                                         <Grid item xs={12} >
                                             <Typography variant="h6" color='primary.contrastText'>
                                                 Full Stack Website for UCSC associated AI for Oceans Program
                                             </Typography>
                                         </Grid>
-                                        <Grid item xs={12} md={6}>
+                                        <Grid item xs={12} sm={12} md={6}>
                                             <Typography color={theme.palette.primary.main}>
                                                 This project was built for my Software Engineering Capstone class, and as such, despite being reletively simple project, it was transformative to 
                                                 my programming journey.  This was built over a 10 week class in a 3 person group, and my group was lucky enough to get the experience of working with a 'client' - the AI 
@@ -81,25 +86,25 @@ export default function Projects() {
                              </ProjectCard>
             </Grid>
             {/* CartPole SNN Card And Popup */}
-            <Grid item md={6} textAlign={'center'}>
+            <Grid item xs={12} md={6}>
                 <ProjectCard title={"CartPole Spiking Neural Network"}
                              media={"/CartPoleSNN.gif"}
                              summary={"A small spiking neural network trained using a simple evolutionary strategy and solving the admittedly simple CartPole Environment"}
                              open={false}>
                     <ProjectPaper>
                         <Grid container padding={4}>
-                            <Grid item md={12}>
+                            <Grid item sm={12}>
                                 <Typography variant="h1" color={theme.palette.primary.contrastText} paddingBottom={4}>
                                     Small Spiking Neural Networks solve Cartpole
                                 </Typography>
                             </Grid>
-                            <Grid item md={12}>
-                                <Typography variant="body1" color={theme.palette.primary.main} paddingBottom={4} textAlign={'left'}>
+                            <Grid item sm={12}>
+                                <Typography variant="body1" color={theme.palette.primary.main} paddingBottom={4}>
                                     Cartpole is an easy environment to solve. So easy in fact, that numerous people have developed solutions that can solve it in the first training generation, (or without training)
                                     either by manually developing a policy, strong initial priors, or even just a lucky initialization in evolutionary search.  Since this was my first foray into reinforcement learning 
                                     with spiking neural networks I wanted to keep it simple. With a policy evolved by a custom evolutionary algorithm, my agent completely solves the environment.
                                 </Typography>
-                                <Typography variant="body1" color={theme.palette.primary.main} textAlign={'left'}>
+                                <Typography variant="body1" color={theme.palette.primary.main}>
                                     The cartpole environment observation is a 4 element vector consisting of position, velocity, pole angle, and angular velocity.  I used a simple MLP with a single hidden layer
                                     and leaky integrate and fire neurons. In order to train this network, I developed an extremely simple evolutionary algorithm (EA). Evolutionary Algorithms are defined by a few key operations: selection, mutation, crossover.  These operations are inspired by their biological 
                                     equivalents and the key distinctions between EAs are often in their mutation and crossover procedures.  For instance the EA Neuroevolution of Augmenting Topologies (NEAT) mutates the
@@ -117,13 +122,13 @@ export default function Projects() {
 
                 </ProjectCard>
             </Grid>
-            <Grid item md={6}>
+            <Grid item xs={12} md={6}>
             <ProjectCard title={"Retro Games and Login Authentication"}
                              media={"/ProjectImgs/Login.PNG"}
                              summary={"A simple project built early in my university time to explore databases, encryption, and game programming"}
                              open={false}>
                     <ProjectPaper>
-                        <Grid container padding={4} textAlign={'center'}>
+                        <Grid container padding={4}>
                             <Grid item md={12}>
                                 <Typography variant="h1" color={theme.palette.primary.contrastText} paddingBottom={4}>
                                     A first portfolio project

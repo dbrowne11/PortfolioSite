@@ -44,6 +44,7 @@ const theme = createTheme({
 		},
 		body1: {
 			fontSize: "1rem",
+			font: "Times New Roman"
 			
 		}
 	},
