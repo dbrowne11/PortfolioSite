@@ -26,10 +26,10 @@ export default function Specializations() {
               </Typography> 
             </Grid>
             <Grid item xs={4} paddingBottom={2}>
-              <MediaCard title={"VAE training on MNIST"} media={"/ProjectImgs/VAE_MNIST_train.gif"} caption={"These plots were generated to validate the VAE that I built before applying it to the CarRacing Task"}/>
+              <MediaCard title={"VAE training on MNIST"} media={"/VAE_MNIST_train.gif"} caption={"These plots were generated to validate the VAE that I built before applying it to the CarRacing Task"}/>
             </Grid>
             <Grid item xs={4}>
-              <MediaCard title={"Spiking Neural Network Solves Cartpole"} media={"/ProjectImgs/CartPoleSNN.gif"} caption={"A small (96 parameter) SNN trained through a simple evolutionary search algorithm solving the cartpole environment"}></MediaCard>
+              <MediaCard title={"Spiking Neural Network Solves Cartpole"} media={"/CartPoleSNN.gif"} caption={"A small (96 parameter) SNN trained through a simple evolutionary search algorithm solving the cartpole environment"}></MediaCard>
             </Grid>
             <Grid item xs={4} paddingLeft={1} paddingRight={1}>
               <Typography variant="body1" sx={{color:theme.palette.primary.main}}>

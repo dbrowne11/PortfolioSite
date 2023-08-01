@@ -38,7 +38,7 @@ export default function Projects() {
                                 </Typography>
                             </Grid>
                             <Grid item xs={4}>
-                                <MediaCard title={"Moonwalk Tutorial (no VR)"} media={"/ProjectImgs/Moonwalk.gif"} caption={"The tutorial explaining game mechanics we gave to subjects prior to their trial."}></MediaCard>
+                                <MediaCard title={"Moonwalk Tutorial (no VR)"} media={"/Moonwalk.gif"} caption={"The tutorial explaining game mechanics we gave to subjects prior to their trial."}></MediaCard>
                             </Grid>
                         </Grid>
                     </ProjectPaper>
