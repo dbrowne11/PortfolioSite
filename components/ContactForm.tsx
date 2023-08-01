@@ -12,7 +12,7 @@ export interface ContactFormProps {
 
 
 const ContactForm = () => {
-    let formState = {"name": null, "subject": null, "message": null, "email": null, "date": null};
+    let formState: any = {"name": null, "subject": null, "message": null, "email": null, "date": null};
     
     // const [name, setName] = React.useState('');
     // const [email, setEmail] = React.useState('');
