@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--+r_1o-#0_=ekax=#ws8t24@yvm+v#lw8vdx#yes^2f0av+!h6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,7 +38,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PARSER_CLASSES': [
+        #'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.JSONParser',
+        #'rest_framework.parsers.MultiPartParser'
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

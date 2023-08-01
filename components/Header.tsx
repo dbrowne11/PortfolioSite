@@ -21,7 +21,7 @@ import FocusArea from "./FocusArea";
 import ContactForm from "./ContactForm";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleOpen =() => setIsOpen(true);
+  const handleOpen = () => setIsOpen(true);
   const handleClose = () => {setIsOpen(false);}
 
   return (
