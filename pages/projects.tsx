@@ -20,26 +20,49 @@ export default function Projects() {
                         <Grid container padding={4}>
                             <Grid item sm={12} textAlign={'center'}>
                                 <Typography variant="h1" color="primary.contrastText" paddingBottom={4} >
-                                    Moonwalk Simulation
+                                Moonwalk virtual reality simulation built with Unity
                                 </Typography>
                             </Grid>
-                            <Grid item md={7} marginRight={2}>
-                                <Typography variant="body1" color={theme.palette.primary.main}>
-                                    The Moonwalk Simulation is a lunar exploration challenge designed to modulate cognitive load and allow for the collection of a cognitive load bioindicator database. 
-                                     While the subject drove a lunar rover between beacons, they were simultaneously tasked with monitoring oxygen and battery levels, managing CO2 levels and motor temperature, 
-                                     tracking a satelite position, and responding to communication prompts.  Each of these tasks had 'difficulty modes', with the harder versions balanced to elicit a greater
-                                     mental workload response. To validate the difficulty modes yielded measureable results, I built and fit a random forest classifier to the collected dataset.  
-                                     In addition, we subjectively validated the cognitive load modulations through NASA's Task Load Index survey. 
-                                </Typography>
-                                <Typography variant="body1" color={theme.palette.primary.main}>
-                                    Through the four months of development, I encountered a number of challenges. I was given nearly free reign of a Unity project in which I needed to implement a variety of 
-                                    simulation and experimental features.  In addition to the variable difficulty tasks, I utilized a (buggy) 3rd party API to integrate a 6-degree of freedom (DOF) 
-                                    motion platform, a 
-                                </Typography>
+                            <Grid item md={7} sm={12} sx={{display: 'inline-grid', alignItems:'flex-end'}}>
+
+                                <Grid item sm={12}>
+                                    <Typography variant="h4" color={"primary.main"} textAlign={'center'}>
+                                        Features
+                                    </Typography>
+                                </Grid>
+                                <Grid item sm={12}>
+                                    <Typography variant="body1" color={"primary.main"}>
+                                    Primary Objective <br/>
+                                    ·  Navigation/Path Planning in a low-traction rover <br/>
+                                    Mental Workload Variable Tasks <br/>
+                                    ·  Antenna Tracking <br/>
+                                    ·  Oxygen and Energy Monitoring<br/>
+                                    ·  CO2 Dumping <br/>
+                                    ·  Radio Responses <br/>
+
+                                    </Typography>
+                                </Grid>
+
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item md={4} sm={12}>
                                 <MediaCard title={"Moonwalk Tutorial (no VR)"} media={"/Moonwalk.gif"} caption={"The tutorial explaining game mechanics we gave to subjects prior to their trial."}></MediaCard>
                             </Grid>
+                            <Grid item sm={12}>
+                                <Typography variant="body1" color={"primary.main"}>
+                                Miscellaneous <br/>
+                                ·  Integration with a 6-DOF motion platform using the SimRacingStudio API <br/>
+                                ·  Simulated LIDAR scanner <br/>
+                                ·  Survey and tutorial VR interfaces <br/>
+                                Data Collection and Communication <br/>
+                                ·  Socket based communication between simulation compute (Windows) and data processing (Linux) <br/>
+                                ·  Structures for game state data, pupillometric data, and survey responses based in ROS messages <br/>
+                                ·  Integrates the participant’s live biodata into the relevant simulation tasks <br/>
+
+                                </Typography>
+
+                            </Grid>
+
+                            
                         </Grid>
                     </ProjectPaper>
                 </ProjectCard>
@@ -125,7 +148,7 @@ export default function Projects() {
             <Grid item xs={12} md={6}>
             <ProjectCard title={"Retro Games and Login Authentication"}
                              media={"/ProjectImgs/Login.PNG"}
-                             summary={"A simple project built early in my university time to explore databases, encryption, and game programming"}
+                             summary={"A simple project built early in my university time using tkinter, pygame, and SQLite"}
                              open={false}>
                     <ProjectPaper>
                         <Grid container padding={4}>
@@ -142,8 +165,8 @@ export default function Projects() {
                                     my other projects, and login to save progress where applicable.  Code is available at <Link href={'https://github.com/dbrowne11/LoginAuth'}>https://github.com/dbrowne11/LoginAuth </Link>
                                 </Typography>
                                 <Typography variant="body1" color={theme.palette.primary.main}>
-                                    The only aspect of this project of particular note is that I used a database for the login system and attempted to properly encrypt the password so that the database would be secure.
-                                    Looking back, I'm not entirely sure if I succeeded, but it was still a great introduction to working with a simple databse.
+                                    The only aspect of this project of particular note is that I used a database for the login system and utilized RSA encryption to secure the database.
+                                    Looking back, I'm sure the security was lacking, but it was still a great introduction to working with a simple databases.
                                 </Typography>
                             </Grid>
                             <Grid item md={4}>
