@@ -173,8 +173,8 @@ const Moonwalk = (props: MoonwalkProps) => {
                         "Pupillometry feature extraction",
                         "Random Forest Classifier to validate experimental results"
                     ] as const).map(
-                    (text: string) => (
-                        <ListItemText sx={{padding: 3, paddingLeft: 1}}>
+                    (text: string, index: number) => (
+                        <ListItemText key={index} sx={{padding: 3, paddingLeft: 1}}>
                             <Typography variant="h6" color={'primary'}>
                                 {" ·  ".concat(text)}
                             </Typography>
