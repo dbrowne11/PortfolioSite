@@ -23,11 +23,11 @@ const MediaCard = (props: MediaCardProps) => {
                 <Typography variant="h5" color={theme.palette.primary.main} align="center">
                     {props.title}
                 </Typography>
-                <Box alignContent={'center'}>
+                <Box alignItems={'right'}>
                     <Image src={props.media} width={250} height={250} alt={"Known issue of images not loading on some browsers, tested on Chrome"}></Image>
 
                 </Box>
-                <Typography variant="body2" color={theme.palette.primary.main} align="center">
+                <Typography variant="body2" color={theme.palette.primary.main} align="left">
                     {props.caption}
                 </Typography>
             </Card>

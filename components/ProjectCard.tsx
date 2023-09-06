@@ -29,7 +29,7 @@ const ProjectCard = (props: ProjectCardProps) => {
           <CardMedia component='img' image={props.media}>
             
           </CardMedia>
-          <Typography variant="body2" color={theme.palette.primary.main} marginTop={2}>
+          <Typography variant="body2" color={theme.palette.primary.main} marginTop={2} textAlign={'center'}>
             {props.summary}
           </Typography>
         </CardActionArea>

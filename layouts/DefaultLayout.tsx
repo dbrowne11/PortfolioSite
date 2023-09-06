@@ -10,14 +10,12 @@ export interface LayoutProps {
 
 const DefaultLayout = (props: LayoutProps) => {
 	return (
-		<div>
-			<Header/>
-			<Container component="main" sx={{  }}>
-				{props.children}
-			</Container>
-
+		<div >
+			{props.children}
 		</div>
 	);
 };
+
+
 
 export default DefaultLayout;

@@ -90,7 +90,7 @@ export default function Projects() {
                                         </Grid>
                                         <Grid item xs={12} md={6}>
                                             <MediaCard title="Final Burnup Chart" 
-                                            media="/ProjectImgs/JiraSprintReport.PNG"
+                                            media="/JiraSprintReport.PNG"
                                             caption="The inital flat part of this graph consists of both time finding my group and time meeting with the client to 
                                             fully determine and understand scope. Additionally a large jump in the scope can be observerd around Nov 18. This jump aligned with our third sprint start where 
                                             we began work on the websites backend, and prior to that we had not accurately estimated or established scope for the backend of this website"/>

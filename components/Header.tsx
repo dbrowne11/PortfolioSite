@@ -25,36 +25,9 @@ const Header = () => {
   const handleClose = () => {setIsOpen(false);}
 
   return (
-    <Box bgcolor={theme.palette.background.paper}>
-      <Grid container spacing={2} padding={2}>
-          <Grid item xs={3}>
-              <FocusArea>
-                <Link href='/'>
-                  <Typography variant="h4" textAlign={'center'}>
-                    Home
-                  </Typography>
-                </Link>
-              </FocusArea>
-          </Grid>
-          <Grid item xs={3}>
-            {/* <FocusArea>
-              <Link href='/projects'>
-                <Typography variant="h4" textAlign={'center'}>
-                  My Projects
-                </Typography>
-              </Link>
-            </FocusArea> */}
-          </Grid>
-          <Grid item xs={3}>
-            {/* <FocusArea>
-              <Link href='/specializations'>
-                <Typography variant="h4" textAlign={'center'}>
-                  Experiences
-                </Typography>
-              </Link>
-            </FocusArea> */}
-          </Grid>
-          <Grid item xs={3}>
+    <Box bgcolor={theme.palette.background.paper} >
+      <Grid container spacing={2} padding={2} alignItems={"flex-end"}>
+          <Grid item xs={12} >
             <FocusArea>
               <Link href="#" onClick={handleOpen}>
                 <Typography variant="h4" textAlign={'center'}>
